@@ -11,4 +11,14 @@ export class ContactPage {
 
   }
 
+  file: File;
+  changeListener($event) : void {
+    this.file = $event.target.files[0];
+    console.log("File " + this.file.name)
+  }
+
+  todo = {}
+  logForm() {
+    console.log(this.todo)
+  }
 }
